@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>artist - track :: &lt5auropod&gt</title>
+	
+	<link rel="stylesheet" type="text/css" href="5auropod.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="player.js"></script>
+	<script src="id3/id3-minimized.js"></script> <!-- Used from https://github.com/aadsm/JavaScript-ID3-Reader -->
+</head>
+<body>
+	<div id="shell">
+		<header>
+			<h1>5auropod.</h1>
+			<span class="subtitle">an html5 based music player</span>
+		</header>
+		<div id="player">
+			<div id="track_info">
+			</div>
+			<audio controls="controls" preload="auto" id="audio_player">
+			</audio>
+		</div>
+		<div id="controls">
+			<div id="previous_button" class="nav_button">previous</div>
+			<div id="next_button" class="nav_button">next</div>
+			<br />
+			<br />
+			<div id="shuffle_button" class="nav_button">shuffle</div>
+		</div>
+		<br class="clear" />
+		<footer id="footer">
+			built in 2012 by Dave Schwantes <br />
+			<a href="http://dinosaurseateverybody.com" title="Dinosaurs Eat Everybody">Dinosaurs Eat Everybody</a>
+		</footer>
+	</div>
+</body>
+</html>

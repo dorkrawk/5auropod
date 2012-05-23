@@ -1,0 +1,159 @@
+body {
+	font-family: sans-serif, Arial;
+	color: #494847;
+
+	background-color: #494847;
+	background-image: url("images/ff_bg.png");
+	background-repeat: repeat;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+a:link, a:active, a:visited {
+	color: #9aad23;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FFFFFF;
+	background-color: #9aad23;
+}
+
+h1 {
+	color: #51799E;
+	margin-bottom: -5px;
+	font-size: 3em;
+	
+	text-shadow: 0px 2px 3px #99C2EB;
+}
+
+.subtitle {
+	font-size: .8em;
+}
+
+#shell {
+	width: 800px;
+	max-width: 800px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -22px;
+	
+	padding: 10px;
+	
+	text-align: center;
+	
+	background-color: white;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+
+
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+
+    box-shadow:0 5px 5px #333333;
+}
+
+header {
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+#player {
+	text-align: center;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cover_art {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 10px;
+}
+
+.loader {
+	margin-top: 30px;
+}
+
+#track_info {
+	height: 100px;
+	min-height: 100px;
+}
+
+.track_title {
+	font-size: 1.3em;
+	clear: right;
+}
+
+.artist {
+	font-size: 0.9em;
+}
+
+audio {
+	width: 400px;
+}
+
+#controls {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	clear: both;
+}
+
+.nav_button {
+	cursor: pointer;
+	font-size: 1.4em;
+	color: #FFFFFF;
+	background-color: #494847;
+
+	
+	padding: 5px;
+	height: 25px;
+	width: 100px;
+	border-radius: 2px;
+	box-shadow:0 2px 2px #333333;
+	margin-top: 0px;
+	margin-bottom: 2px;
+}
+
+.nav_button:hover {
+	color: #FFFFFF;
+	background-color: #9aad23;
+}
+
+.nav_button:active {
+	box-shadow: none;
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+
+#previous_button {
+	float: left;
+	padding-left: 10px;
+	border-top-left-radius: 15px 15px;
+	border-bottom-left-radius: 15px 15px;
+}
+
+#next_button {
+	float: right;
+	padding-right: 10px;
+	border-top-right-radius: 15px 15px;
+	border-bottom-right-radius: 15px 15px;
+}
+
+#footer {
+	text-align: center;
+	font-size: .8em;
+	
+	margin-top: 10px;
+	padding-top: 5px;
+}
+
+.clear {
+	clear: both;
+}
