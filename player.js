@@ -58,6 +58,16 @@ function player(playlist){
 		});
 		
 		$(audio_player).html("<source src='" + audio_file + "' type='audio/mp3' />");
+	};
+	
+	// takes in an number (integer) of seconds and changes it to a nice time format 00:00
+	var nice_time = function(t) {
+		minutes = Math.floor(t/60);
+		seconds = t%60;
+		if(seconds < 10) {
+			seconds = "0"+seconds;
+		}
+		return minutes + ":" + seconds;	
 	};  
 	
 	return {
@@ -72,10 +82,30 @@ function player(playlist){
 				shuffle = !shuffle;
 				console.log(shuffle);	
 			});
+			$("div#play_button").click(function(){
+				the_player = document.getElementById('audio_player');
+				if(the_player.paused) {
+					the_player.play();
+					$("div#play_button").html("pause");
+				}
+				else {
+					the_player.pause();
+					$("div#play_button").html("play");
+				}
+			});
+			
+			$("audio#audio_player").bind('timeupdate', function() {
+				the_player = document.getElementById('audio_player');
+				the_time = Math.floor(the_player.currentTime);
+				
+				//console.log(nice_time(the_time));
+				//console.log(Math.floor(the_player.currentTime));
+				$("div#time").html(nice_time(the_time));
+			});
 			$("audio#audio_player").bind('ended', function() {
 				next_track(function(){
 					console.log(this);
-					the_player = document.getElementById('audio_player')
+					the_player = document.getElementById('audio_player');
 					the_player.play();
 				});
 			});
